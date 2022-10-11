@@ -115,45 +115,6 @@
         app:layout_constraintTop_toBottomOf="@+id/btngLogin"
         app:layout_constraintVertical_bias="0.924" />
 
-    <ImageView
-        android:id="@+id/imgGoogle"
-        android:layout_width="55dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btngLogin"
-        app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/google_icon" />
-
-    <ImageView
-        android:id="@+id/imgLinkedin"
-        android:layout_width="55dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btngLogin"
-        app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/linkedin_icon" />
-
-    <ImageView
-        android:id="@+id/imgFacebook"
-        android:layout_width="75dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="216dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btngLogin"
-        app:layout_constraintVertical_bias="0.505"
-        app:srcCompat="@drawable/facebook_icon" />
-
     <TextView
         android:id="@+id/txtSignInOption"
         android:layout_width="wrap_content"
@@ -177,5 +138,48 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.129"
         app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLinkedIn"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794"
+        app:srcCompat="@drawable/logo_linkedin" />
+
+    <ImageButton
+        android:id="@+id/imgBtnFB"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794"
+        app:srcCompat="@drawable/logo_facebook"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imgBtnGoogle"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794"
+        app:srcCompat="@drawable/logo_google" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

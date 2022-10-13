@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class SplashActivity : AppCompatActivity() {
 
@@ -18,12 +22,14 @@ class SplashActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         setContentView(R.layout.activity_splash)
-
-        Handler(Looper.myLooper()!!).postDelayed({
-
-            startActivity(Intent(this, MainActivity::class.java))
+        CoroutineScope(Dispatchers.Main).launch {
+            delay(3000L)
+            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             finish()
 
+        }
+
+        Handler(Looper.myLooper()!!).postDelayed({
         }, SPLASH_SCREEN_TIME)
 
     }
